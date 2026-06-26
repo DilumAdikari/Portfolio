@@ -2,7 +2,7 @@ export const initialPersonalInfo = {
   name: 'N.A.D.R Adikari',
   title: 'MERN DEVELOPER & IT OPERATIONS SPECIALIST',
   bio: 'Analytical BIT undergraduate at the University of Moratuwa specializing in the intersection of software logic and physical IT infrastructure. Experienced in the full lifecycle of technical support, from LAN configuration and network management to PC hardware repair and MERN-stack application development.',
-  github: 'https://github.com/dilumadikari610-coder',
+  github: 'https://github.com/DilumAdikari',
   linkedin: 'www.linkedin.com/in/dilum-adikari-747960414',
   email: 'dilumadikari610@gmail.com',
   phone: '0743775423',

@@ -97,7 +97,7 @@ export default function Hero({ personalInfo, style, scrollY, scrollTo }) {
 
             {/* GitHub Account Anchor Node using Custom Downloaded Image Asset */}
             <a
-              href={personalInfo.github || "https://github.com"}
+              href={personalInfo.github || "https://github.com/DilumAdikari"}
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-xl border border-zinc-800 hover:border-zinc-700 bg-zinc-900/40 hover:bg-zinc-900 transition-colors flex items-center justify-center group w-[46px] h-[46px]"
