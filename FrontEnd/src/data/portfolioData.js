@@ -72,7 +72,8 @@ export const initialProjects = [
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind'],
     type: 'Logistics SaaS',
     github: 'https://github.com/DilumAdikari',
-    demo: '#'
+    demo: '#',
+    image: '/images/transitflow.png'
   },
   {
     id: '2',
@@ -81,7 +82,8 @@ export const initialProjects = [
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS'],
     type: 'Enterprise Software',
     github: 'https://github.com/DilumAdikari',
-    demo: '#'
+    demo: '#',
+    image: '/images/Code.jpg'
   },
   {
     id: '3',

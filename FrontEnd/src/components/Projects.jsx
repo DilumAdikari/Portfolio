@@ -32,6 +32,22 @@ export default function Projects({ projects, style }) {
           >
             <div className="group bg-zinc-900/80 border border-zinc-800/80 rounded-2xl overflow-hidden hover:shadow-xl hover:shadow-black/40 transition-all duration-300 flex flex-col h-full relative backdrop-blur-sm">
               <div className={`h-1.5 ${style.primaryBg}`} />
+              
+              {/* Project Image Container with object-contain */}
+              <div className="aspect-video w-full overflow-hidden border-b border-zinc-800/80 bg-zinc-950 flex items-center justify-center p-2 relative">
+                {proj.image ? (
+                  <img 
+                    src={proj.image} 
+                    alt={proj.title} 
+                    className="w-full h-full object-contain rounded-lg group-hover:scale-105 transition-transform duration-500"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center text-zinc-600 text-xs font-mono">
+                    {proj.type} Preview
+                  </div>
+                )}
+              </div>
+
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between mb-4">
