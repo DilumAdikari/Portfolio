@@ -4,11 +4,12 @@ import { ArrowUp } from "lucide-react";
 // Subcomponents Imports
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import Languages from "./components/Languages";
-import Experience from "./components/Experience";
+import Certificates from "./components/Certificates";
 import Education from "./components/Education";
+import Languages from "./components/Languages";
 import Contact from "./components/Contact";
 import CustomizerModal from "./components/CustomizerModal";
 import Footer from "./components/Footer";
@@ -22,6 +23,7 @@ import {
   initialExperience,
   initialEducation,
   initialProjects,
+  initialCertificates,
 } from "./data/portfolioData";
 import { themes } from "./themes/themePresets";
 
@@ -31,6 +33,7 @@ export default function App() {
   const [experience] = useState(initialExperience);
   const [educationList] = useState(initialEducation);
   const [projects, setProjects] = useState(initialProjects);
+  const [certificates] = useState(initialCertificates);
 
   const [activeTheme, setActiveTheme] = useState("midnight");
   const [isCustomizerOpen, setIsCustomizerOpen] = useState(false);
@@ -59,11 +62,12 @@ export default function App() {
 
       const sections = [
         "home",
+        "experience",
         "projects",
         "skills",
-        "languages",
-        "experience",
+        "certificates",
         "education",
+        "languages",
         "contact",
       ];
       const scrollPosition = currentScrollY + 250;
@@ -130,7 +134,7 @@ export default function App() {
 
       {/* Main content elements wrapped inside higher z-index to stay above 3D elements */}
       <div className="relative z-10">
-        {/* Hero Structure Main Wrapper */}
+        {/* 1. Hero Introduction */}
         <Hero
           personalInfo={personalInfo}
           style={style}
@@ -138,17 +142,26 @@ export default function App() {
           scrollTo={scrollTo}
         />
 
-        {/* Projects Component List Rendering Wrapper */}
+        {/* 2. Professional Work Experience */}
+        <Experience experience={experience} style={style} />
+
+        {/* 3. Projects Catalog */}
         <Projects
           projects={projects}
           style={style}
           handleRemoveProject={handleRemoveProject}
         />
 
-        {/* Core Technical Core Matrix Grid */}
+        {/* 4. Core Technical Skills */}
         <Skills style={style} />
 
-        {/* Linguistics Dashboard Dial System */}
+        {/* 5. Certifications & Credentials */}
+        <Certificates certificates={certificates} style={style} />
+
+        {/* 6. Academic Qualifications & Education */}
+        <Education educationList={educationList} style={style} />
+
+        {/* 7. Languages Proficiency Dashboard */}
         <Languages
           personalInfo={personalInfo}
           style={style}
@@ -156,13 +169,7 @@ export default function App() {
           setSelectedLanguageIndex={setSelectedLanguageIndex}
         />
 
-        {/* Professional Core History List System */}
-        <Experience experience={experience} style={style} />
-
-        {/* Academic Qualifications Hierarchy Board */}
-        <Education educationList={educationList} style={style} />
-
-        {/* Communications Interface Node */}
+        {/* 8. Communications / Contact Form */}
         <Contact personalInfo={personalInfo} style={style} />
 
         {/* Base Global Architecture Footer */}
