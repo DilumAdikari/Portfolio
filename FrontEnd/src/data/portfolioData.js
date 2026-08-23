@@ -37,7 +37,18 @@ export const initialExperience = [
       'Hardware Systems Support: Diagnosed and maintained specialized industrial hardware, including POS terminals, thermal printers, and barcode systems, to minimize operational downtime.',
       'Technical Troubleshooting: Provided rapid-response support for complex network bottlenecks and hardware failures to guarantee high systems availability.'
     ]
-  }
+  },
+  {
+    role: 'Freelance Software Developer',
+    company: 'Fiverr & Independent Clients',
+    period: '2025 AUGUST - PRESENT',
+    type: 'Freelance',
+    bullets: [
+      'Full-Stack Web Development: Designed and delivered custom full-stack web applications using the MERN stack (MongoDB, Express, React, Node.js) and Vite for international clients.',
+      'Custom SaaS & Dashboards: Developed responsive client dashboards, secure user authentication systems, and automated booking/management platforms with Tailwind CSS styling.',
+      'API Integration & Deployment: Configured backend REST APIs, connected cloud databases via MongoDB Atlas, and managed seamless deployments using platforms like Vercel and Render.'
+    ]
+  },
 ];
 
 export const initialEducation = [
@@ -92,15 +103,17 @@ export const initialProjects = [
     tech: ['React', 'Vite', 'Tailwind CSS', 'Node.js', 'Express'],
     type: 'Booking SaaS',
     github: 'https://github.com/DilumAdikari',
-    demo: '#'
+    demo: '#',
+    image: '/images/film.png'
   },
   {
     id: '4',
-    title: 'Interactive Attendance Marking System',
+    title: 'Attendance Marking System',
     description: 'An interactive desktop application built for university evaluation to handle user authentication, attendance logging, and automated reporting.',
     tech: ['C#', '.NET', 'Windows Forms'],
     type: 'Desktop App',
     github: 'https://github.com/DilumAdikari',
-    demo: '#'
+    demo: '#',
+    image: '/images/attend.png'
   }
 ];
