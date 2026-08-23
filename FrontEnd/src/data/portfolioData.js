@@ -71,17 +71,34 @@ export const initialProjects = [
     description: 'A dedicated logistics platform automating vehicle requests, driver allocations, and tracking mechanisms using Express backend routes and real-time frontend indicators.',
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind'],
     type: 'Logistics SaaS',
-    github: '#',
+    github: 'https://github.com/DilumAdikari',
     demo: '#'
   },
-  
- /* {
+  {
     id: '2',
-    title: 'Moratuwa Academic Hub',
-    description: 'Collaborative task portal built during full-stack web certification to manage academic modules, grade registries, and server integrations.',
-    tech: ['React', 'Tailwind CSS', 'Express.js', 'Node.js'],
-    type: 'Web Portal',
-    github: '#',
+    title: 'Garment Industry MRP System',
+    description: 'Custom Manufacturing Resource Planning system built for the garment industry, featuring quality control tracking, style planning, job sheets, Goods Received Notes (GRN), and FIFO warehouse validation.',
+    tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS'],
+    type: 'Enterprise Software',
+    github: 'https://github.com/DilumAdikari',
     demo: '#'
-  } */
+  },
+  {
+    id: '3',
+    title: 'Film & Gaming Room Rental Platform',
+    description: 'An online reservation platform and dark-themed administrative dashboard featuring unique ticket IDs, hidden access toggles, and live status tracking for room rentals.',
+    tech: ['React', 'Vite', 'Tailwind CSS', 'Node.js', 'Express'],
+    type: 'Booking SaaS',
+    github: 'https://github.com/DilumAdikari',
+    demo: '#'
+  },
+  {
+    id: '4',
+    title: 'Interactive Attendance Marking System',
+    description: 'An interactive desktop application built for university evaluation to handle user authentication, attendance logging, and automated reporting.',
+    tech: ['C#', '.NET', 'Windows Forms'],
+    type: 'Desktop App',
+    github: 'https://github.com/DilumAdikari',
+    demo: '#'
+  }
 ];
