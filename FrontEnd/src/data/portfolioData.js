@@ -72,16 +72,18 @@ export const initialProjects = [
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind'],
     type: 'Logistics SaaS',
     github: 'https://github.com/DilumAdikari',
-    demo: '#'
+    demo: '#',
+    image: '/images/new req.jpg'
   },
   {
     id: '2',
-    title: 'Garment Industry MRP System',
+    title: 'MRP System',
     description: 'Custom Manufacturing Resource Planning system built for the garment industry, featuring quality control tracking, style planning, job sheets, Goods Received Notes (GRN), and FIFO warehouse validation.',
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS'],
     type: 'Enterprise Software',
     github: 'https://github.com/DilumAdikari',
-    demo: '#'
+    demo: '#',
+    image: '/images/Code.jpg'
   },
   {
     id: '3',
