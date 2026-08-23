@@ -2,9 +2,8 @@ import React from 'react';
 import * as Lucide from 'lucide-react';
 import ScrollReveal from './ScrollReveal';
 
-export default function Projects({ projects, style, handleRemoveProject }) {
+export default function Projects({ projects, style }) {
   // Safely assign icon components from package tree with fallbacks
-  const TrashIcon = Lucide.Trash2 || Lucide.Trash || Lucide.Menu;
   const GithubIcon = Lucide.Github || Lucide.GitHub || Lucide.Menu;
   const ExternalLinkIcon = Lucide.ExternalLink || Lucide.Menu;
 
@@ -39,13 +38,6 @@ export default function Projects({ projects, style, handleRemoveProject }) {
                     <span className="px-2.5 py-1 rounded bg-zinc-950 border border-zinc-800 text-[9px] font-mono uppercase font-bold text-zinc-400 tracking-wider">
                       {proj.type}
                     </span>
-                    <button 
-                      onClick={() => handleRemoveProject(proj.id)}
-                      className="p-1.5 rounded-lg text-zinc-400 hover:text-red-500 hover:bg-zinc-800 transition-all opacity-0 group-hover:opacity-100 focus:opacity-100"
-                      title="Simulate MongoDB document deletion"
-                    >
-                      <TrashIcon className="w-4 h-4" />
-                    </button>
                   </div>
                   <h3 className="text-lg font-bold text-zinc-100 mb-2">{proj.title}</h3>
                   <p className="text-zinc-400 text-xs leading-relaxed mb-6">{proj.description}</p>
