@@ -73,11 +73,11 @@ export const initialProjects = [
     type: 'Logistics SaaS',
     github: 'https://github.com/DilumAdikari',
     demo: '#',
-    image: '/images/transitflow.png'
+    image: '/images/new req.jpg'
   },
   {
     id: '2',
-    title: 'Garment Industry MRP System',
+    title: 'MRP System',
     description: 'Custom Manufacturing Resource Planning system built for the garment industry, featuring quality control tracking, style planning, job sheets, Goods Received Notes (GRN), and FIFO warehouse validation.',
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS'],
     type: 'Enterprise Software',
