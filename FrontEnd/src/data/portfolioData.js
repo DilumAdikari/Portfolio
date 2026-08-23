@@ -117,3 +117,42 @@ export const initialProjects = [
     image: '/images/attend.png'
   }
 ];
+
+export const initialCertificates = [
+  {
+    id: '1',
+    title: 'Front-End Web Development Certification',
+    issuer: 'University of Moratuwa, Sri Lanka',
+    date: 'Completed',
+    description: 'Comprehensive coverage of modern frontend rendering frameworks',
+    credentialLink: '#',
+    image: '/images/front.jpg' // certificate image එක public/images/ folder එකට දාන්න
+  },
+  {
+    id: '2',
+    title: 'Server Side Development Certification',
+    issuer: 'University of Moratuwa, Sri Lanka',
+    date: 'Completed',
+    description: 'Comprehensive coverage of modern server-side development practices',
+    credentialLink: '#',
+    image: '/images/server.jpg' // certificate image එක public/images/ folder එකට දාන්න
+  },
+  {
+    id: '3',
+    title: 'Time Managment',
+    issuer: 'Lingaya Lalita Devi Institute of Management & Sciences (LLDIMS)',
+    date: 'Completed',
+    description: 'Time Management Skill',
+    credentialLink: '#',
+    image: '/images/time.jpg' // certificate image එක public/images/ folder එකට දාන්න
+  },
+  {
+    id: '4',
+    title: 'Python For Beginner',
+    issuer: 'university of Moratuwa, Sri Lanka',
+    date: 'Completed',
+    description: 'Python Programming Skill',
+    credentialLink: '#',
+    image: '/images/python.jpg' // certificate image එක public/images/ folder එකට දාන්න
+  },
+];

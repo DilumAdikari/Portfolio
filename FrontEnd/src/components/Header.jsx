@@ -13,6 +13,9 @@ export default function Header({
   const CloseIcon = Lucide.X || Lucide.Menu;
   const LinkedinIcon = Lucide.Linkedin || Lucide.Menu;
 
+  // Professional sections order
+  const navItems = ['home', 'experience', 'projects', 'skills', 'certificates', 'education', 'languages', 'contact'];
+
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md transition-all duration-300 ${
       scrollY > 50 
@@ -28,14 +31,14 @@ export default function Header({
         </div>
 
         {/* Navigation Link list */}
-        <nav className="hidden md:flex items-center gap-8 text-zinc-400">
-          {['home', 'projects', 'skills', 'languages', 'experience', 'education', 'contact'].map((sec) => (
+        <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-zinc-400">
+          {navItems.map((sec) => (
             <button 
               key={sec}
               onClick={() => scrollTo(sec)} 
               className={`text-xs uppercase font-medium tracking-widest transition-colors ${activeSection === sec ? style.activeText : 'hover:text-zinc-100'}`}
             >
-              {sec === 'home' ? 'About' : sec.charAt(0).toUpperCase() + sec.slice(1)}
+              {sec === 'home' ? 'About' : sec === 'certificates' ? 'Certificates' : sec.charAt(0).toUpperCase() + sec.slice(1)}
             </button>
           ))}
         </nav>
@@ -70,9 +73,9 @@ export default function Header({
       {/* Mobile Menu Slide */}
       {mobileMenuOpen && (
         <div className="md:hidden border-t bg-zinc-950 border-zinc-900 px-6 py-6 space-y-4 shadow-xl text-zinc-300">
-          {['home', 'projects', 'skills', 'languages', 'experience', 'education', 'contact'].map((sec) => (
+          {navItems.map((sec) => (
             <button key={sec} onClick={() => scrollTo(sec)} className="block text-sm uppercase tracking-widest font-bold">
-              {sec === 'home' ? 'About' : sec.charAt(0).toUpperCase() + sec.slice(1)}
+              {sec === 'home' ? 'About' : sec === 'certificates' ? 'Certificates' : sec.charAt(0).toUpperCase() + sec.slice(1)}
             </button>
           ))}
           <div className="pt-4 border-t border-zinc-900 flex items-center justify-between">
