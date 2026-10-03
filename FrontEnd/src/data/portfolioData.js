@@ -115,6 +115,16 @@ export const initialProjects = [
     github: 'https://github.com/DilumAdikari',
     demo: '#',
     image: '/images/attend.png'
+  },
+    {
+    id: '5',
+    title: 'Maintenance Management System! 🛠️',
+    description: 'Managing and tracking maintenance tasks efficiently can be challenging. To streamline this workflow, I developed a full-fledged Maintenance Management System designed to track requests, schedule maintenance routines, and keep operations running smoothly.',
+    tech: ['Mongodb', 'Exprss js', 'React','Node js'],
+    type: 'Web App',
+    github: 'https://github.com/DilumAdikari',
+    demo: '#',
+    image: '/images/dashboard.png'
   }
 ];
 
